@@ -20,11 +20,56 @@
     <a href="#">游戏中心</a>
     <a href="#">直播</a>
     <a href="#">会员购</a>
-    <a href="#">漫画</a>
+    <div class="topDiv"><a href="#" @mouseenter="enter3" @mouseleave="leave3">漫画</a>
+        <div class="absolute" id="topDiv3">
+            <img src="img/p32.png" id="topDiv3-img1">
+            <div class="topDiv3-inner">
+                <div class="topDiv3-inner-left">
+                    <div class="topDiv3-innerDiv">
+                        <a href="#" style="margin: 0px">
+                            <img src="img/p15.jpg">
+                            <div class="topDiv3-innerWords">工作细胞</div>
+                        </a>
+                    </div>
+                    <div class="topDiv3-innerDiv">
+                        <a href="#" style="margin: 0px">
+                            <img src="img/p12.jpg">
+                            <div class="topDiv3-innerWords">工作细胞</div>
+                        </a>
+                    </div>
+                    <div class="topDiv3-innerDiv">
+                        <a href="#" style="margin: 0px">
+                            <img src="img/p17.jpg">
+                            <div class="topDiv3-innerWords">工作细胞</div>
+                        </a>
+                    </div>
+                    <div class="topDiv3-innerDiv">
+                        <a href="#" style="margin: 0px">
+                            <img src="img/p19.jpg">
+                            <div class="topDiv3-innerWords">工作细胞</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="topDiv3-inner-right">
+                    <div class="topDiv3-inner-rightMain">人气漫画</div>
+                    <div>
+                        <a href="#">1&nbsp&nbsp&nbsp鬼灭之刃</a>
+                        <a href="#">2&nbsp&nbsp&nbsp鬼灭之刃</a>
+                        <a href="#">3&nbsp&nbsp&nbsp鬼灭之刃</a>
+                        <a href="#">4&nbsp&nbsp&nbsp鬼灭之刃</a>
+                        <a href="#">5&nbsp&nbsp&nbsp鬼灭之刃</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <a href="#">赛事</a>
-    <a href="#">下载APP</a>
+    <div class="topDiv" @mouseenter="enter4" @mouseleave="leave4"><a href="#">下载APP</a>
+        <div class="absolute" id="topDiv4"><img src="img/p32.png" id="topDiv4-img1"><img src="img/p31.png"
+                                                                                         id="topDiv4-img2"></div>
+    </div>
     <div class="searchDiv">
-        <input type="text" class="form-control" value="惊喜！鹿晗吴亦凡新歌">
+        <input type="text" class="form-control" placeholder="惊喜！鹿晗吴亦凡新歌">
     </div>
     <button type="submit" class="searchButton">
         <div class="glyphicon glyphicon-search"></div>
@@ -396,8 +441,9 @@
             <div><img src="img/p24.png"></div>
             <div><img src="img/p25.png"></div>
             <a href="#">
-                <div><img id="changeimg1" src="img/p26.png" style="position: absolute">
-                    <img id="changeimg2" src="img/p27.png">
+                <div id="changeImg">
+                    <img src="img/p26.png" id="changeImg1" style="position: absolute">
+                    <img src="img/p27.png" id="changeImg2">
                 </div>
             </a>
         </div>
@@ -427,7 +473,7 @@
             <br>
             <span>公司名称：上海宽娱数码科技有限公司|公司地址：上海市杨浦区政立路485号|电话：021-25099888</span>
         </span>
-    </span>
+        </span>
     </div>
 </footer>
 </body>
