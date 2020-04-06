@@ -6,6 +6,7 @@ body {
 
 a:hover {
     text-decoration: none;
+    color: #2aabd2
 }
 
 a {
@@ -15,7 +16,45 @@ a {
 br {
     font-size: 0px;
 }
-
+.float{
+    width: 100%;
+    position: fixed;
+}
+.float-left{
+    position: fixed;
+    bottom: 0px;
+    float: left;
+}
+.float-right{
+    position: absolute;
+    right: 5%;
+    border: 1px solid #f1f3f4;
+    margin-top: 90px;
+}
+.float-rightDiv{
+    font-size: 12px;
+    padding: 4px 15px;
+}
+.float-rightDiv:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #00a1d6;
+}
+.float-leftDiv1{
+    font-size: 12px;
+    width: 23px;
+    text-align: center;
+    line-height: 14px;
+    border: 2px solid #f1f3f4;
+    margin: 0px 10px 78px 0px;
+    padding: 8px 19px 8px 7px;
+}
+.float-leftDiv1:hover{
+    background-color: #f1f3f4;
+}
+.float-left a:hover{
+    color: black;
+}
 .top {
     margin: 10px 0px;
     width: 100%;
@@ -23,12 +62,16 @@ br {
 }
 
 #topDiv3 {
+    position: absolute;
+    margin-top: -6px;
     display: none;
+    z-index: 1;
 }
 
 #topDiv3-img1 {
     height: 8px;
     width: 15px;
+    margin-top: 10px;
     margin-left: 17px;
 }
 
@@ -38,7 +81,6 @@ br {
     height: 246px;
     width: 500px;
     margin-left: -40px;
-    margin-top: -7px;
 }
 
 .topDiv3-inner-left {
@@ -99,7 +141,9 @@ br {
 }
 
 #topDiv4 {
+    position: absolute;
     display: none;
+    z-index: 1;
 }
 
 #topDiv4-img1 {
@@ -112,11 +156,6 @@ br {
     width: 300px;
     margin-left: -120px;
     margin-top: -9px;
-}
-
-.absolute {
-    position: absolute;
-    z-index: 999;
 }
 
 #downloadAPP-1 {
@@ -135,7 +174,7 @@ br {
     width: 170px;
     position: absolute;
     left: 170px;
-    top: 80px;
+    top: 40px;
 }
 
 .sign-in-img {
@@ -191,7 +230,7 @@ li {
     list-style-type: none;
 }
 
-div.categoryMenu {
+.categoryMenu {
     max-width: 1200px;
     margin: 0px auto;
     padding: 20px 0px 0px 0px;
@@ -285,6 +324,7 @@ ul.category-part3 {
     position: relative;
     display: inline-block;
     margin: 0px -4px 10px 10px;
+    overflow: hidden;
 }
 
 .menu-img-words {
@@ -293,6 +333,7 @@ ul.category-part3 {
     top: 90px;
     left: 10px;
     color: white;
+    line-height: 30px;
 }
 
 .size1 {
@@ -445,7 +486,6 @@ footer {
     background-color: #f7f7f8;
     padding-top: 23px;
 }
-
 .footerContent {
     width: 1200px;
     margin: 0px auto 30px;

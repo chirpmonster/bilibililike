@@ -13,15 +13,43 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+<div class="float">
+    <div class="float-left">
+        <a href="#"><div class="float-leftDiv1">联系客服</div></a>
+        <a href="#"><img src="img/p33.png" style="height: 140px;margin: 10px"></a>
+    </div>
+    <div class="float-right">
+        <a href="#todayFocus"><div class="float-rightDiv">焦点</div></a>
+        <a href="#living"><div class="float-rightDiv">直播</div></a>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+        <div class="float-rightDiv">暂无</div>
+    </div>
+</div>
 <div class="top">
-    <img src="img/p3.png" class="bilibilisummer-img">
+    <a href="#"><img src="img/p3.png" class="bilibilisummer-img"></a>
     <a href="#" class="">主站</a>
     <a href="#">番剧</a>
     <a href="#">游戏中心</a>
     <a href="#">直播</a>
     <a href="#">会员购</a>
-    <div class="topDiv"><a href="#" @mouseenter="enter3" @mouseleave="leave3">漫画</a>
-        <div class="absolute" id="topDiv3">
+    <div class="topDiv" @mouseenter="enter3" @mouseleave="leave3"><a href="#">漫画</a>
+        <div id="topDiv3">
             <img src="img/p32.png" id="topDiv3-img1">
             <div class="topDiv3-inner">
                 <div class="topDiv3-inner-left">
@@ -65,7 +93,7 @@
     </div>
     <a href="#">赛事</a>
     <div class="topDiv" @mouseenter="enter4" @mouseleave="leave4"><a href="#">下载APP</a>
-        <div class="absolute" id="topDiv4"><img src="img/p32.png" id="topDiv4-img1"><img src="img/p31.png"
+        <div id="topDiv4"><img src="img/p32.png" id="topDiv4-img1"><img src="img/p31.png"
                                                                                          id="topDiv4-img2"></div>
     </div>
     <div class="searchDiv">
@@ -84,7 +112,7 @@
         </span>
     </div>
 </div>
-<img src="img/p2.png" class="top-img">
+<img src="img/p2.png" style="width: 100%">
 <div class="mainContent">
     <div class="category">
         <div class="categoryMenu">
@@ -213,42 +241,77 @@
         </div>
         <div class="category-right">
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p10.jpg">
-                    <div class="menu-img-words">这女的好丑</div>
+                <div class="menu-imgDiv">
+                    <div @mouseenter="showTitle(0)" @mouseleave="hideTitle(0)"><img src="img/p10.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p11.jpg">
-                    <div class="menu-img-words">好像茵蒂克丝</div>
+                <div class="menu-imgDiv">
+                    <div @mouseenter="showTitle(1)" @mouseleave="hideTitle(1)"><img src="img/p11.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p12.jpg">
-                    <div class="menu-img-words">虎口拔牙？</div>
+                <div class="menu-imgDiv">
+                    <div @mouseenter="showTitle(2)" @mouseleave="hideTitle(2)"><img src="img/p12.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p13.jpg">
-                    <div class="menu-img-words">木大木大木大木大</div>
+                <div class="menu-imgDiv">
+                    <div @mouseenter="showTitle(3)" @mouseleave="hideTitle(3)"><img src="img/p13.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p14.jpg">
-                    <div class="menu-img-words">尬不尬啊</div>
+                <div class="menu-imgDiv">
+                    <div @mouseenter="showTitle(4)" @mouseleave="hideTitle(4)"><img src="img/p14.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="#">
-                <div class="menu-imgDiv"><img src="img/p15.jpg">
-                    <div class="menu-img-words">b站怎么全是这种</div>
+                <div class="menu-imgDiv" @mouseenter="showTitle(5)" @mouseleave="hideTitle(5)">
+                        <img src="img/p15.jpg">
+                        <div class="menu-img-words">
+                            <div style="margin-bottom: 15px">标题标题</div>
+                            <div>UP 冷静的嘤嘤怪</div>
+                            <div>10.4w播放</div>
+                        </div>
                 </div>
             </a>
         </div>
     </div>
-    <div class="todayFocus">
+    <div class="todayFocus" id="todayFocus">
         <div class="glyphicon glyphicon-bullhorn size1"></div>
         <span id="todayFocus-words1">今日焦点</span>
         <a href="#"><span id="todayFocus-words2">更多热点></span></a>
-        <button type="button" class="onlineList">在线列表</button>
+        <button href="#" type="submit" class="onlineList">在线列表</button>
     </div>
     <div class="mainRecommend">
         <div class="mainRecommend-left">
@@ -296,12 +359,12 @@
         <div style="clear: both"></div>
     </div>
     <a href="#"><img src="img/p30.jpg" class="middleAdv"></a>
-    <div class="living">
+    <div class="living" id="living">
         <div class="living-left">
             <div class="glyphicon glyphicon-bullhorn size1"></div>
             <span id="living-words1">正在直播</span>
             <span id="living-words2">当前共有12336个直播</span>
-            <a href="#"><span id="living-words3">233秒居然能做这些！</span></a>
+            <span id="living-words3"><a href="#">233秒居然能做这些！</a></span>
             <button type="button" class="living-button">更多></button>
             <button type="button" class="living-button">换一换</button>
         </div>
@@ -314,7 +377,7 @@
     <div class="mainRecommend">
         <div class="mainRecommend-left">
             <a href="#">
-                <div class="mainRecommend-img-first"><img src="img/p20.jpg">
+                <div class="mainRecommend-img-first"><img src="img/p21.jpg">
                     <div class="mainRecommend-title">超出一行也完全不影响内容的标题</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -323,7 +386,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p19.jpg">
+                <div class="mainRecommend-img"><img src="img/p22.jpg">
                     <div class="mainRecommend-title">这是标题</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -332,7 +395,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p18.jpg">
+                <div class="mainRecommend-img"><img src="img/p14.jpg">
                     <div class="mainRecommend-title">超出两行的内容被隐藏了超出两行的内容被隐藏了超出两行的内容被隐藏了</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -341,7 +404,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p17.jpg">
+                <div class="mainRecommend-img"><img src="img/p12.jpg">
                     <div class="mainRecommend-title">省略号还没做</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -355,7 +418,7 @@
         </div>
         <div class="mainRecommend-left">
             <a href="#">
-                <div class="mainRecommend-img-first"><img src="img/p20.jpg">
+                <div class="mainRecommend-img-first"><img src="img/p11.jpg">
                     <div class="mainRecommend-title">超出一行也完全不影响内容的标题</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -364,7 +427,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p19.jpg">
+                <div class="mainRecommend-img"><img src="img/p15.jpg">
                     <div class="mainRecommend-title">这是标题</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -373,7 +436,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p18.jpg">
+                <div class="mainRecommend-img"><img src="img/p17.jpg">
                     <div class="mainRecommend-title">超出两行的内容被隐藏了超出两行的内容被隐藏了超出两行的内容被隐藏了</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -382,7 +445,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="mainRecommend-img"><img src="img/p17.jpg">
+                <div class="mainRecommend-img"><img src="img/p16.jpg">
                     <div class="mainRecommend-title">省略号还没做</div>
                     <div class="upName">
                         <div class="upLogo">UP</div>
@@ -399,7 +462,7 @@
     <div class="footerContent">
         <div class="footerContent-part1">
             <div class="footerTitle">bilibili</div>
-            <a href="#" class="footerHref">关于我们</a>
+            <a href="#" class="footerHref" style="cursor: pointer">关于我们</a>
             <a href="#" class="footerHref">加入我们</a>
             <a href="#">bilibili认证</a>
             <br>
@@ -442,7 +505,7 @@
             <div><img src="img/p25.png"></div>
             <a href="#">
                 <div id="changeImg">
-                    <img src="img/p26.png" id="changeImg1" style="position: absolute">
+                    <img src="img/p26.png" id="changeImg1" style="position: absolute;z-index: 1">
                     <img src="img/p27.png" id="changeImg2">
                 </div>
             </a>
