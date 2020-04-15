@@ -444,8 +444,11 @@ ul.category-part3 {
     width: 204px;
     height: 36px;
     /*换行代码*/
-    word-break: break-all;
     overflow: hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
 }
 
 .mainRecommend-right img {
